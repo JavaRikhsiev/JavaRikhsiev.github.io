@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<a href="index.html"><img src="images/abc.png" alt="Logo"></a> 
+
+
+ <br></br>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/navigation.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="scripts/lightbox2-master/dist/css/lightbox.min.css">
+  <script src="scripts/lightbox2-master/dist/js/lightbox-plus-jquery.js"></script>
+ <script src="scripts/lightbox2-master/dist/js/lightbox-min.js"></script>
+ <script src="scripts/fullnav.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/login.css">
+<link rel="stylesheet" href="styles/fullnav.css">
+</head>
+<div>
+<button class="Login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/user.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input class="input" type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input class="input" type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button class="Login" type="submit">Login</button>
+      <label>
+        <input class="input" type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</div>
+  
+</head>
+
+<style type="text/css">
+	body {
+		background-image: url(testimonia.webp);
+		background-attachment: fixed;
+		background-position: center;
+	}
+</style>
+<body>
+	<!-- Fully monitored navigation -->
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="about.html">About</a>
+    <a href="http://wiut.uz/">Services</a>
+    <a href="contact-us.html">Contact</a>
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<div class="topnav"> <!-- site map section -->
+    <a href="about.html">About</a>
+  <a href="index.html">Home</a>
+ <a class="active" href="Introduction-statistics.html">Introduction to statistics</a>
+  <a href="Probability.html">Probability</a>
+   <a href="quiz.html">Quiz</a>
+   <a href="table.html">Staff</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+</header>
+<body>
+<section>
+<h1> Introduction to Statistics </h1>
+<section>
+  <ul>
+<li><a href="#sectionVideo">Watch tutorial</a></li>
+<li><a href="#sectiona">Basic types of Statistics</a></li>
+<li><a href="#sectionData">Basic types of Data</a></li> 
+<li><a href="#sectionb">Non-random samples</a></li>
+</ul>
+<div style="height:200px"></div>
+
+<div id="sectionVideo"></div> 
+<h1>Watch tutotial</h1>
+<video width="640" height="360" controls poster="images/intro.png"> 
+ <source src="media/Statistics - Introduction to Statistics.mp4" type="video/mp4"> 
+ <!--
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SFPGVTThJNk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+ </video>
+
+
+
+<div id="sectiona"></div>
+
+
+  <h1>Basic types of Statistics</h1>
+  <nav class="centered">
+ <img class="pic" src="images/dataa.png">
+ </nav>
+ <table class="centered">
+    <p><span style="color:#3D62A3;font-weight:bold">Descriptive Statistics</span> uses the data to provide descriptions of the population, either through numerical calculations or graphs or tables. </p>
+    <p><span style="color:#3D62A3;font-weight:bold">Inferential Statistics</span> makes inferences and predictions about a population based on a sample of data taken from the population in question.</p>
+    <!-- information taken from https://study.com/academy/lesson/descriptive-and-inferential-statistics.html-->
+    <h1> </h1>
+        <tr>
+          
+          <th>Descriptive Statistics</th>
+          <th>Inferential Statistics</th>
+        </tr>
+        <tr>
+          <td>Concerned with the describing the target population</td>
+          <td>Make inferences from the sample and generalizes about the population</td>
+          
+        <tr>
+          <td>Organizes, analyzes and presents the data in a meaningful manner</td>
+          <td>Tries to make conclusions about the population that is beyond the available data</td>
+          
+        <tr>
+          <td>Tools - measures of central tendency he (mean/median/mode) spread  of data range, standard deviation, etc.</td>
+          <td>Tools - hypothesis tests, analysis of variance, regression, etc.</td>
+        
+         
+        </tr> <!-- following table has taken from the lecture pptx -->
+      </table>
+<div id="sectionData"></div>
+<nav>
+<h1>Basic types of Data</h1>
+</nav>
+
+<p><span style="color:#3D62A3;font-weight:bold">A quantitative (numerical) data </span>takes numerical values for which arithmetic operations such as adding and averaging make sense.
+</p>
+<p><span style="color:#3D62A3;font-weight:bold">A categorical (qualitative) data </span>places a case into one of several groups or categories.</p>
+ <nav class="centered">
+ <a href="images/types.jpg" alt="Selection bias" title="Selection bias" data-lightbox="image-1">
+ <img class="pic" src="images/types.jpg"></a></nav>
+
+<div id="sectionb"></div>
+<h1>Non-random samples</h1>
+<p><span style="color:#3D62A3;font-weight:bold">Selection bias</span> results when
+a subset of the experimental units in 
+the population is excluded so that 
+these units have no chance of being 
+selected in the sample.
+</p>
+<p><span style="color:#3D62A3;font-weight:bold">Nonresponse bias</span> results when the 
+researches conducting a survey or 
+study are unable to obtain data on 
+all experimental units selected for 
+the sample.
+</p>
+<nav class="centered">
+<a href="images/bias.jpg" alt="Selection bias" title="Selection bias" data-lightbox="image-1">
+<img class="pic" src="images/bias.jpg"></a></img></nav>
+ <script>
+ let anchorlinks = document.querySelectorAll('a[href^="#"]')
+
+for (let item of anchorlinks) { // relitere 
+    item.addEventListener('click', (e)=> {
+        let hashval = item.getAttribute('href')
+        let target = document.querySelector(hashval)
+        target.scrollIntoView({
+            behavior: 'smooth'
+        })
+        history.pushState(null, null, hashval)
+        e.preventDefault()
+    })
+} 
+</script>
+	 <br>
+	 <footer>
+      <section>
+        <h5>Site map</h5>
+        <ul>
+		<li> <a href="about.html">About</a></li>
+		<li> <a href="index.html">Home</a></li>
+		<li class="active"><a href="Introduction-statistics.html">Statistics</a></li>
+		<li> <a href="Probability.html">Probability</a></li>
+		<li> <a href="quiz.html">Quiz</a></li>
+		<li> <a href="table.html">Staff</a></li>
+		<li> <a href="contact-us.html">Contact us</a></li>
+		</ul>
+      </section>
+      <section>
+	  <h5>Networks</h5>
+	  <ul>
+            <li><a href="https://intranet.wiut.uz" target="_blank">Intranet.WIUT</a></li>
+            <li><a href="http://wiut.uz/" target="_blank">WIUT.uz</a></li>
+    		<li><a href="https://www.google.com/" target="_blank">Google</a></li>
+            <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+    		<li><a href="https://study.com" target="_blank">Study</a></li>
+            <li><a href="https://learn.saylor.org" target="_blank">Learn.saylor</a></li>
+            <li><a href="https://www.coursera.org" target="_blank">Coursera</a></li>
+        </ul>
+</section>
+<section>
+        <h5>About</h5>
+        <p>Front-end website for <abbr title="Web Technology">WT</abbr> module, 2019.</p> <p>Student ID: 00008532 </p>
+<p>  E-mail: <a href="https://mail.wiut.uz/owa/"> 00008532@wiut.uz</a></p>
+</footer>
+</body>
+</html>

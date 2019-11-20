@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <a href="index.html"><img src="images/abc.png" alt="Logo"></a> 
+ <br></br>
+<title>Quiz of Fundamentals of Statistics</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="scripts/lightbox2-master/dist/css/lightbox.min.css">
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/navigation.css">
+<link rel="stylesheet" href="styles/login.css">
+<link href ="styles/quiz.css" rel ="stylesheet">
+<link rel="stylesheet" href="styles/fullnav.css">
+<script src ="scripts/quizJava.js"></script>
+<script src="scripts/fullnav.js"></script>
+
+</head>
+<div>
+<button class="Login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/user.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input class="input" type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input class="input" type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button class="Login" type="submit">Login</button>
+      <label>
+        <input class="input" type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</div>
+  
+</head>
+
+<style type="text/css">
+  body {
+    background-image: url(testimonia.webp);
+    background-attachment: fixed;
+    background-position: center;
+  }
+</style>
+<body>
+<!-- Fully monitored navigation -->
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="about.html">About</a>
+    <a href="http://wiut.uz/">Services</a>
+    <a href="contact-us.html">Contact</a>
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<div class="topnav"> <!-- site map section -->
+    <a href="about.html">About</a>
+  <a href="index.html">Home</a>
+ <a href="Introduction-statistics.html">Introduction to statistics</a>
+  <a href="Probability.html">Probability</a>
+   <a class="active" href="quiz.html">Quiz</a>
+   <a href="table.html">Staff</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+</header>
+</header>
+
+
+<body>
+
+<h2>Quiz of Fundamentals of Statistics </h2>
+<h1></h1>
+
+
+<form id = "quiz" name = "quiz">
+
+
+<p class = "questions">1. ...is a characteristic or property of an individual experimental ( or observational) unit in the population.</p>
+<input id = "textbox" type = "text" name = "question1">
+
+<p class = "questions">2. What type of statistics involves using sample data to draw conclusions about a population?</p>
+<input type = "radio" id = "mc" name = "question2" value = "Descriptive statistics"> Descriptive statistics <br>
+<input type = "radio" id = "mc" name = "question2" value = "Inferential statistics"> Inferential statistics<br>
+<input type = "radio" id = "mc" name = "question2" value = "Inferential statistics"> Primary statistics<br>
+
+<p class = "questions">3.Find the type of union event "The event A has no influence on the event B"</p>
+
+<input type = "radio" id = "mc" name = "question3" value = "Dependent events"> Dependent events
+<br>
+<input type = "radio" id = "mc" name = "question3" value = "Independent events"> Independent events<br>
+<input type = "radio" id = "mc" name = "question3" value = "Mutually exclusive events"> Mutually exclusive events<br>
+
+<p class = "questions">4.Which random variable has a finite or countable number of possible outcomes that can be listed?</p>
+
+<input type = "radio" id = "mc" name = "question4" value = "Discrete"> Discrete<br>
+<input type = "radio" id = "mc" name = "question4" value = "Continuous"> Continuous<br>
+<input type = "radio" id = "mc" name = "question4" value = "Continuous"> Both of them<br>
+
+<p class = "questions">5.Which random variable has an uncountable number or possible outcomes, represented by the intervals on a number line?</p>
+
+<input type = "radio" id = "mc" name = "question5" value = "Discrete"> Discrete<br>
+<input type = "radio" id = "mc" name = "question5" value = "Continuous"> Continuous<br>
+<input type = "radio" id = "mc" name = "question4" value = "Continuous"> Both of them<br>
+
+<input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+
+
+</form>
+
+<div id = "after_submit">
+<p id = "number_correct"></p>
+<p id = "message"></p>
+<img id = "picture">
+</div>
+
+
+</body>
+</html>
+
+

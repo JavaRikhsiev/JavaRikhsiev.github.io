@@ -1,0 +1,240 @@
+/* General formatting */
+body {
+	/* set styling for text */
+	font-size: 16pt;
+	font-family: "Segoe UI", Times New Roman, sans-serif;
+	color: #000000;
+
+	/* set size and position for the main block */
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 1.5em 1em;	
+	box-sizing: border-box;
+	
+	background: url(testimonia.webp) fixed center;
+	background-image: url(testimonia.webp);
+	background-attachment: fixed;
+	background-position: center;
+
+
+
+	/* add decorative shadow to the main block */
+	box-shadow: 0 0 7em lightgrey;
+}
+
+h1, h3, caption, th {
+	
+	text-transform: uppercase;
+	font-family: "Castellar", serif;
+	letter-spacing: 0.03em;
+	font-weight: normal;
+	margin-bottom: 0.5em;
+}
+
+
+
+h1 {
+	/* underline 1st-level heading
+	to make it more prominent */
+	border-bottom: solid 1px #333;
+}
+
+a {
+	text-decoration: none;
+	color: #3D62A3;
+}
+
+.centered {
+	/* separate class for elements that should be centered – 
+	header, table contents, list in footer, etc. */
+	text-align: center;
+}
+
+/* Header styles */
+header {
+	margin: 0 -1.5em;
+	overflow: hidden;
+}
+
+#logo {
+	/* set vertical distance from logo */
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+
+#panoramic {
+	/* limit the width for panoramic image */
+	max-width: 1024px;
+}
+
+/* Table styles */
+table {
+	
+    font-family: arial, sans-serif;
+	width: 100%;
+	margin-bottom: 1.5em;
+
+	/* remove spaces between cell borders */
+	border-collapse: collapse;
+}
+
+caption {
+	text-align: left;
+
+	/* default font-size for H3 element */
+	font-size: 1.17em;
+}
+
+th, td {
+	padding: 0.5em 0.2em;
+}
+
+tr:nth-child(even) {
+	/* paint even rows with different color */
+	background-color: #C2C8D1  ;
+}
+
+
+}
+
+table ul {
+	/* disable bullet points */
+	list-style-type: none;
+}
+
+table p, ul {
+	text-align: left;
+}
+
+
+}
+
+/* Gallery styles */
+a.gallery-item {
+	/* set color of the links */
+	color: #333;
+}
+
+.gallery-item img {
+	/* set height of image preview */
+	height: 280px;
+width:200px;
+}
+@media (max-width: 950px) {/* This tag implemented to make Website responsive*/
+	.gallery-item {
+		margin: 30%;
+
+	}
+	h1 {
+		font-size: 1em;
+	}
+	table {
+		font-size: 50%;
+	}
+	video {
+		width:420px; 
+		height:260px;
+	}
+	.pic {
+		width:420px; 
+		height:260px;
+	}
+	button {
+		font-size: 10px;
+	}
+	
+}
+
+figure {
+	/* allow figures to be placed alongside each other */
+	display: inline-block;
+
+	/* make image previews square – limit 
+	figure width and crop whatever does not fit */
+	width: 200px;
+	overflow: hidden;
+	
+	/* override default figure margins, so that 
+	more gallery items can fit each line */
+	margin: 1em 0.2em;
+
+}
+
+figure:hover {
+	/* make hovered figure more prominent 
+	to let user know that it is clickable */
+	box-shadow: 0 0 10px lightgray;
+}
+
+
+
+figcaption {
+	text-align: center;
+	margin-bottom: 0.5em;
+}
+
+/* Footer styles */
+footer {
+	border-top: solid 1px #333;
+	padding-top: 0.5em;
+}
+
+footer > ul > li {
+	/* arrange all list items on the same line */
+	display: inline-block;
+}
+
+footer > ul > li:after {
+	/* place a middle dot after each 
+	list item and separate it with margin */
+	content: "·";
+	margin: 0 1em;
+}
+
+footer > ul > li:last-of-type:after {
+	/* remove middle dot after the last list item */
+	display: none;
+}
+
+.movement {
+	float:right;
+	width:75%;
+	margin-top:20pt;
+	
+}
+.photo {
+	height: 440px;
+width:1050px;
+}
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: RoyalBlue;
+}
+#sectiona, #sectionb{
+  font-size: 140%;
+  font-weight: bold;
+  text-align: center;
+  padding: 2px;
+  background: ;
+  width: 50%;
+  height: 15px;
+}
+
+#sectionb{
+  background: ;
+  color: white;
+}
+
+
+	
+
+	

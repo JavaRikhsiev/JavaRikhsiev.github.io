@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<a href="index.html"><img src="images/abc.png" alt="Logo"></a> 
+ <br></br>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/navigation.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="scripts/lightbox2-master/dist/css/lightbox.min.css">
+  <script src="scripts/lightbox2-master/dist/js/lightbox-plus-jquery.js"></script>
+ <script src="scripts/lightbox2-master/dist/js/lightbox-min.js"></script>
+ <script src="scripts/fullnav.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/login.css">
+<link rel="stylesheet" href="styles/fullnav.css">
+</head>
+<div>
+<button class="Login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/user.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input class="input" type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input class="input" type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button class="Login" type="submit">Login</button>
+      <label>
+        <input class="input" type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</div>
+  
+</head>
+
+<style type="text/css">
+  body {
+    background-image: url(testimonia.webp);
+    background-attachment: fixed;
+    background-position: center;
+  }
+</style>
+<body>
+<!-- Fully monitored navigation -->
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="about.html">About</a>
+    <a href="http://wiut.uz/">Services</a>
+    <a href="contact-us.html">Contact</a>
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<div class="topnav"> <!-- site map section -->
+    <a href="about.html">About</a>
+  <a href="index.html">Home</a>
+ <a href="Introduction-statistics.html">Introduction to statistics</a>
+  <a class="active" href="Probability.html">Probability</a>
+   <a href="quiz.html">Quiz</a>
+   <a href="table.html">Staff</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+</header>
+<body>
+<section>
+  <ul>
+<li><a href="#sectionVideo1">Watch tutorial</a></li>
+<li><a href="#sectionVideo2">Watch tutorial-№2</a></li>
+<li><a href="#sectiona">Probability</a></li>
+<li><a href="#sectionComb">Combination and Permutation</a></li> 
+<li><a href="#sectionb">Unions</a></li>
+</ul>
+<div style="height:200px"></div>
+<div id="sectionVideo1"></div> 
+<h1>Watch tutotial</h1>
+<video width="640" height="360" controls poster="images/prob.png"> 
+ <source src="media/Introduction to probability 1.mp4" type="video/mp4"> 
+ </video>
+ <br></br>
+ <div id="sectionVideo2"></div> 
+ <h1>Watch tutotial №2</h1>
+ <video width="640" height="360" controls poster="images/prob2.png"> 
+ <source src="media/Introduction to probability 2.mp4" type="video/mp4"> 
+ </video>
+  <div id="sectiona"></div> 
+  <h1>Probability</h1>
+  <div>
+ <p><span style="color:#3D62A3;font-weight:bold">Probability </span>is a numerical measure of the chance (or likelihood) that a particular event will occur.</p>
+ <img class="pic" src="images/pro.jpg">
+ <p> Probability values are always assigned on a scale of<span style="color:#3D62A3;font-weight:bold"> 0</span> to <span style="color:#3D62A3;font-weight:bold">1</span> :</p>
+<ul>
+<li> <span style="color:#3D62A3;font-weight:bold">0</span> indicates that an event is very unlikely to occur </li> 
+ <li><span style="color:#3D62A3;font-weight:bold">1</span> indicates that an even is almost certain to occur</li>
+</ul>
+<br> </br>
+ <img class="pic" src="images/proba.png">
+ </div>
+<div id="sectionComb"></div> 
+  <h1>Combination and Permutation</h1>
+  <p><span style="color:#3D62A3;font-weight:bold">Combination formula:</span> n objects are to be selected from a set of N objects, where the order of selection is not important.
+</p> 
+<img class="pic" src="images/pr.png">
+<p> <span style="color:#3D62A3;font-weight:bold">Permutation formula:</span> n objects are to be selected from a set of N objects, where the order of selection is important. </p>
+ <img class="pic" src="images/prr.png">
+<div id="sectionb"></div> 
+  <h1>Unions</h1>
+  <ul>
+ <li> <span style="color:#3D62A3;font-weight:bold">Mutually exclusive events</span> </li>
+<p>The events A and B do not have any experimental outcomes in common</p>
+<img class="pic" src="images/pro1.png">
+ <li> <span style="color:#3D62A3;font-weight:bold">Dependent events</span> </li>
+ <p>The event A has an influence on the event B</p>
+ <img class="pic" src="images/pro2.png">
+ <li> <span style="color:#3D62A3;font-weight:bold">Independent events</span> </li>
+ <p> The event A has no influence on the event B</p>
+ <img class="pic" src="images/pro3.png">
+ </ul>
+ <script>
+ let anchorlinks = document.querySelectorAll('a[href^="#"]')
+
+for (let item of anchorlinks) { // relitere 
+    item.addEventListener('click', (e)=> {
+        let hashval = item.getAttribute('href')
+        let target = document.querySelector(hashval)
+        target.scrollIntoView({
+            behavior: 'smooth'
+        })
+        history.pushState(null, null, hashval)
+        e.preventDefault()
+    })
+} 
+</script>
+</section>
+	 <br>
+	  <footer>
+      <section>
+        <h5>Site map</h5>
+        <ul>
+		<li> <a href="about.html">About</a></li>
+		<li> <a href="index.html">Home</a></li>
+		<li> <a href="Introduction-statistics.html">Statistics</a></li>
+		<li class="active"><a href="Probability.html">Probability</a></li>
+		<li> <a href="quiz.html">Quiz</a></li>
+    <li> <a href="table.html">Staff</a></li>
+    <li> <a href="contact-us.html">Contact us</a></li>
+		</ul>
+      </section>
+      <section>
+	  <h5>Networks</h5>
+	  <ul>
+            <li><a href="https://intranet.wiut.uz" target="_blank">Intranet.WIUT</a></li>
+            <li><a href="http://wiut.uz/" target="_blank">WIUT.uz</a></li>
+            <li><a href="https://www.google.com/" target="_blank">Google</a></li>
+            <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+            <li><a href="https://study.com" target="_blank">Study</a></li>
+            <li><a href="https://learn.saylor.org" target="_blank">Learn.saylor</a></li>
+            <li><a href="https://www.coursera.org" target="_blank">Coursera</a></li>
+        </ul>
+</section>
+<section>
+        <h5>About</h5>
+        <p>Front-end website for <abbr title="Web Technology">WT</abbr> module, 2019.</p> <p>Student ID: 00008532 </p>
+<p>  E-mail: <a href="https://mail.wiut.uz/owa/"> 00008532@wiut.uz</a></p>
+</footer>
+</body>
+</html>
