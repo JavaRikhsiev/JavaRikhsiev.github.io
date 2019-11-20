@@ -100,50 +100,86 @@ window.onclick = function(event) {
 
 <body>
 
-<h2>Quiz of Fundamentals of Statistics </h2>
-<h1></h1>
+ <h2>Quiz of Fundamentals of Statistics </h2>
+ <h1></h1>
 
 
 <form id = "quiz" name = "quiz">
+ <p class = "questions">1. ...is a characteristic or property of an individual experimental ( or observational) unit in the population.</p>
+  <input id = "textbox" type = "text" name = "question1">
+   <p class = "questions">2. What type of statistics involves using sample data to draw conclusions about a population?</p>
+  <input type = "radio" id = "mc" name = "question2" value = "Descriptive statistics"> Descriptive statistics <br>
+  <input type = "radio" id = "mc" name = "question2" value = "Inferential statistics"> Inferential statistics<br>
+  <input type = "radio" id = "mc" name = "question2" value = "Inferential statistics"> Primary statistics<br>
+   <p class = "questions">3.Find the type of union event "The event A has no influence on the event B"</p>
+  <input type = "radio" id = "mc" name = "question3" value = "Dependent events"> Dependent events
+   <br>
+  <input type = "radio" id = "mc" name = "question3" value = "Independent events"> Independent events<br>
+  <input type = "radio" id = "mc" name = "question3" value = "Mutually exclusive events"> Mutually exclusive events<br>
 
+   <p class = "questions">4.Which random variable has a finite or countable number of possible outcomes that can be listed?</p>
 
-<p class = "questions">1. ...is a characteristic or property of an individual experimental ( or observational) unit in the population.</p>
-<input id = "textbox" type = "text" name = "question1">
+    <input type = "radio" id = "mc" name = "question4" value = "Discrete"> Discrete<br>
+    <input type = "radio" id = "mc" name = "question4" value = "Continuous"> Continuous<br>
+    <input type = "radio" id = "mc" name = "question4" value = "Continuous"> Both of them<br>
+      <p class = "questions">5.Which random variable has an uncountable number or possible outcomes, represented by the intervals on a number line?</p>
 
-<p class = "questions">2. What type of statistics involves using sample data to draw conclusions about a population?</p>
-<input type = "radio" id = "mc" name = "question2" value = "Descriptive statistics"> Descriptive statistics <br>
-<input type = "radio" id = "mc" name = "question2" value = "Inferential statistics"> Inferential statistics<br>
-<input type = "radio" id = "mc" name = "question2" value = "Inferential statistics"> Primary statistics<br>
-
-<p class = "questions">3.Find the type of union event "The event A has no influence on the event B"</p>
-
-<input type = "radio" id = "mc" name = "question3" value = "Dependent events"> Dependent events
-<br>
-<input type = "radio" id = "mc" name = "question3" value = "Independent events"> Independent events<br>
-<input type = "radio" id = "mc" name = "question3" value = "Mutually exclusive events"> Mutually exclusive events<br>
-
-<p class = "questions">4.Which random variable has a finite or countable number of possible outcomes that can be listed?</p>
-
-<input type = "radio" id = "mc" name = "question4" value = "Discrete"> Discrete<br>
-<input type = "radio" id = "mc" name = "question4" value = "Continuous"> Continuous<br>
-<input type = "radio" id = "mc" name = "question4" value = "Continuous"> Both of them<br>
-
-<p class = "questions">5.Which random variable has an uncountable number or possible outcomes, represented by the intervals on a number line?</p>
-
-<input type = "radio" id = "mc" name = "question5" value = "Discrete"> Discrete<br>
-<input type = "radio" id = "mc" name = "question5" value = "Continuous"> Continuous<br>
-<input type = "radio" id = "mc" name = "question4" value = "Continuous"> Both of them<br>
-
-<input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
-
-
+    <input type = "radio" id = "mc" name = "question5" value = "Discrete"> Discrete<br>
+    <input type = "radio" id = "mc" name = "question5" value = "Continuous"> Continuous<br>
+    <input type = "radio" id = "mc" name = "question4" value = "Continuous"> Both of them<br>
+    <input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
 </form>
-
 <div id = "after_submit">
-<p id = "number_correct"></p>
-<p id = "message"></p>
-<img id = "picture">
+ <p id = "number_correct"></p>
+ <p id = "message"></p>
+ <img id = "picture">
 </div>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-size: 18px;
+  background-color: red;
+  color: white;
+  padding: 15px;
+  
+}
+
+#myBtn:hover {
+  background-color: royalblue;
+}
+</style>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Go to Top</button>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 
 
 </body>
